@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  fetch('https://perl-ads.perlhacks.com/perl-ads.json')
+  fetch('/perl-ads.json')
     .then(response => {
       if (response.status === 404) {
         return null;
