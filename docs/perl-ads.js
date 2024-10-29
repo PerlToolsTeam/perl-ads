@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const adFragment = document.createElement('div');
       adFragment.innerHTML = `
         <div class="ad text-center">
-          <p><span style="font-weight: bold;">${data.title}</span> ${data.description} <a href="${data.link}">Learn more</a></p>
+          <p><span style="font-weight: bold;">${data.title}:</span> ${data.description} <a href="${data.link}" target="_blank">Learn more</a></p>
         </div>
       `;
 
