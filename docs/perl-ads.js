@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  fetch('/perl-ads.json')
+  fetch('https://perl-ads.perlhacks.com/perl-ads.json')
     .then(response => {
       if (response.status === 404) {
         return null;
@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
       const adFragment = document.createElement('div');
       adFragment.innerHTML = `
-        <div class="ad text-center mt-3 mb-1">
-          <p class="fw-bold">${data.title}:</p> ${data.description} <a href="${data.link}" target="_blank">Learn more</a>
+        <div class="ad text-center mt-1">
+          <p><span class="fw-bold">${data.title}:</span> ${data.description} <a href="${data.link}" target="_blank">Learn more</a></p>
         </div>
       `;
 
