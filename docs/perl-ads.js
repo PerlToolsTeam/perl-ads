@@ -7,14 +7,16 @@ document.addEventListener("DOMContentLoaded", function() {
       return response.json();
     })
     .then(data => {
-      if (!data || !data.link) {
+      if (!data || !Array.isArray(data) || data.length === 0) {
         return;
       }
+
+      const randomAd = data[Math.floor(Math.random() * data.length)];
 
       const adFragment = document.createElement('div');
       adFragment.innerHTML = `
         <div class="ad text-center mt-1">
-          <p><span class="fw-bold">${data.title}:</span> ${data.description} <a href="${data.link}" target="_blank">Learn more</a></p>
+          <p><span class="fw-bold">${randomAd.title}:</span> ${randomAd.description} <a href="${randomAd.link}" target="_blank">Learn more</a></p>
         </div>
       `;
 
