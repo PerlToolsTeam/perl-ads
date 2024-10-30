@@ -13,14 +13,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
       const randomAd = data[Math.floor(Math.random() * data.length)];
 
-      const adFragment = document.createElement('div');
-      adFragment.innerHTML = `
-        <div id="perl-ad" class="text-center mt-1">
-          <p><span id="perl-ad-title"><b>${randomAd.title}:</b></span> <span id="perl-ad-desc">${randomAd.description}</span> <span id="perl-ad-link"><a href="${randomAd.link}" target="_blank">Learn more</a></span></p>
-        </div>
-      `;
+      const adContainer = document.createElement('div');
+      adContainer.id = 'perl-ad';
+      adContainer.className = 'text-center mt-1';
 
-      document.body.insertBefore(adFragment, document.body.firstChild);
+      const adTitle = document.createElement('span');
+      adTitle.id = 'perl-ad-title';
+      adTitle.innerHTML = `<b>${randomAd.title}:</b>`;
+
+      const adDesc = document.createElement('span');
+      adDesc.id = 'perl-ad-desc';
+      adDesc.textContent = ` ${randomAd.description} `;
+
+      const adLink = document.createElement('span');
+      adLink.id = 'perl-ad-link';
+
+      const link = document.createElement('a');
+      link.href = randomAd.link;
+      link.target = '_blank';
+      link.textContent = 'Learn more';
+
+      adLink.appendChild(link);
+
+      const adParagraph = document.createElement('p');
+      adParagraph.appendChild(adTitle);
+      adParagraph.appendChild(adDesc);
+      adParagraph.appendChild(adLink);
+
+      adContainer.appendChild(adParagraph);
+
+      document.body.insertBefore(adContainer, document.body.firstChild);
     })
     .catch(error => {
       console.error('Error fetching ad:', error);
