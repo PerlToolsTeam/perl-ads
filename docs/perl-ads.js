@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
       const adFragment = document.createElement('div');
       adFragment.innerHTML = `
-        <div class="ad text-center mt-1">
-          <p><span class="fw-bold">${randomAd.title}:</span> ${randomAd.description} <a href="${randomAd.link}" target="_blank">Learn more</a></p>
+        <div class="perl-ad text-center mt-1">
+          <p><span class="perl-ad-title fw-bold">${randomAd.title}:</span> <span class="perl-ad-desc">${randomAd.description}</span> <span class="perl-ad-link"><a href="${randomAd.link}" target="_blank">Learn more</a></span></p>
         </div>
       `;
 
