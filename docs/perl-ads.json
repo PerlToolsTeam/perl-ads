@@ -1,5 +1,17 @@
-{
-  "title": "TPRC 2025",
-  "description": "Greenville, South Carolina - June 27-29",
-  "link": "https://tprc.us/"
-}
+[
+  {
+    "title": "TPRC 2025",
+    "description": "Greenville, South Carolina - June 27-29",
+    "link": "https://tprc.us/"
+  },
+  {
+    "title": "Perl Conference 2025",
+    "description": "Houston, Texas - July 20-22",
+    "link": "https://perlconference.us/"
+  },
+  {
+    "title": "YAPC::Europe 2025",
+    "description": "Amsterdam, Netherlands - August 10-12",
+    "link": "https://yapceurope.org/"
+  }
+]
