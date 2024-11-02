@@ -15,11 +15,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
       const adContainer = document.createElement('div');
       adContainer.id = 'perl-ad';
-      adContainer.className = 'text-center mt-1';
+      adContainer.style.textAlign = 'center';
+      adContainer.style.marginTop = '0.25rem'; // Equivalent to Bootstrap's mt-1
 
       const adTitle = document.createElement('span');
       adTitle.id = 'perl-ad-title';
-      adTitle.innerHTML = `<b>${randomAd.title}:</b>`;
+      const boldTitle = document.createElement('b');
+      boldTitle.textContent = `${randomAd.title}:`;
+      adTitle.appendChild(boldTitle);
 
       const adDesc = document.createElement('span');
       adDesc.id = 'perl-ad-desc';
