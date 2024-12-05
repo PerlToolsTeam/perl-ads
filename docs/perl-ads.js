@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
       const adContainer = document.createElement('div');
       adContainer.id = 'perl-ad';
       adContainer.style.textAlign = 'center';
-      adContainer.style.marginTop = '0.25rem'; // Equivalent to Bootstrap's mt-1
+      adContainer.style.padding = '0.25rem';
+      adContainer.style.margin = '0';
 
       const adTitle = document.createElement('span');
       adTitle.id = 'perl-ad-title';
