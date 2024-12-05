@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
       adContainer.style.textAlign = 'center';
       adContainer.style.padding = '0.25rem';
       adContainer.style.margin = '0';
+      adContainer.style.border = '0 solid inherit';
 
       const adTitle = document.createElement('span');
       adTitle.id = 'perl-ad-title';
