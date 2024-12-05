@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const adContainer = document.createElement('div');
       adContainer.id = 'perl-ad';
       adContainer.style.textAlign = 'center';
-      adContainer.style.padding = '0.25rem';
+      adContainer.style.padding = '0.125rem';
       adContainer.style.margin = '0';
       adContainer.style.border = '0 solid inherit';
 
