@@ -63,7 +63,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     adContainer.appendChild(adParagraph);
 
-    document.body.insertBefore(adContainer, document.body.firstChild);
+    const target = document.getElementById('perl-ad-target');
+    if (target) {
+      target.appendChild(adContainer);
+    } else {
+      document.body.insertBefore(adContainer, document.body.firstChild);
+    }
   };
 
   const storedAds = localStorage.getItem(storageKey);
