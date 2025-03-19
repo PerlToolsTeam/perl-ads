@@ -1,4 +1,12 @@
-document.addEventListener("DOMContentLoaded", function() {
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", function() {
+    initializeAds();
+  });
+} else {
+  initializeAds();
+}
+
+function initializeAds() {
   const storageKey = 'perlAds';
   const storageTimestampKey = 'perlAdsTimestamp';
   const expireAfter = 60 * 60 * 1000; // One hour in milliseconds
@@ -79,4 +87,4 @@ document.addEventListener("DOMContentLoaded", function() {
   } else {
     fetchAds();
   }
-});
+}
