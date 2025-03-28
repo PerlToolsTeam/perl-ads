@@ -35,7 +35,27 @@ function initializeAds() {
   };
 
   const displayAd = (data) => {
-    const randomAd = data[Math.floor(Math.random() * data.length)];
+    const currentDate = new Date().toISOString().split('T')[0]; // Get current date in YYYY-MM-DD format
+    const validAds = data.filter(ad => {
+      const startDate = ad.start ? new Date(ad.start) : null;
+      const endDate = ad.end ? new Date(ad.end) : null;
+
+      if (startDate && endDate) {
+        return currentDate >= ad.start && currentDate <= ad.end;
+      } else if (startDate) {
+        return currentDate >= ad.start;
+      } else if (endDate) {
+        return currentDate <= ad.end;
+      } else {
+        return true; // Ads without start and end dates are always valid
+      }
+    });
+
+    if (validAds.length === 0) {
+      return; // No valid ads to display
+    }
+
+    const randomAd = validAds[Math.floor(Math.random() * validAds.length)];
 
     const adContainer = document.createElement('div');
     adContainer.id = 'perl-ad';

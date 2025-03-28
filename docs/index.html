@@ -63,6 +63,10 @@
         <p>If you find you need anything else, then please
           <a href="https://github.com/PerlToolsTeam/perl-ads/issues">raise an issue</a>
           and we'll see what we can do.</p>
+        <h2>Date Format for Ads</h2>
+        <p>The JSON objects for ads can include optional <tt>start</tt> and <tt>end</tt> keys to specify the date range during which the ad should be displayed. These keys are optional, but if provided, they must follow the specified date format.</p>
+        <p>The date format for the <tt>start</tt> and <tt>end</tt> keys is <tt>YYYY-MM-DD</tt>. For example, a valid date would be <tt>2025-06-27</tt>.</p>
+        <p>Ads without <tt>start</tt> and <tt>end</tt> keys are considered always valid and will be displayed regardless of the current date.</p>
       </div>
       <div class="col-2"></div> <!-- Empty column for right margin -->
     </div>
