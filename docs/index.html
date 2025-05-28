@@ -50,6 +50,18 @@
             (you'll want to edit the file <a href="https://github.com/PerlToolsTeam/perl-ads/blob/main/docs/perl-ads.json"><tt>perl-ads.json</tt></a>)</li>
           <li>Raise an <a href="https://github.com/PerlToolsTeam/perl-ads/issues">issue</a> if you'd like more help</li>
         </ul>
+        <h2>JSON format</h2>
+        <p>Entries in `perlads.json` should have the following attributes:</p>
+        <ul>
+          <li><b>title</b> - the title of the event</li>
+          <li><b>description</b> - a brief description of the event</li>
+          <li><b>link</b> - a link to the web site for the event</li>
+          <li><b>start</b> (optional) - the date when this ad should start appearing</li>
+          <li><b>end</b> (optional) - the date when this ad should stop appearing</li>
+        </ul>
+        <p>The optional `start` and `end` attributes are so the people running
+          the ad server don't have to add and remove the ads in real time
+          :-)</p>
         <h2>CSS</h2>
         <p>In order to make it easier to style the ads so they fit in with
           the look and feel of your site, the HTML elements that we add
