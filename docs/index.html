@@ -28,7 +28,9 @@
       <div class="row">
         <div class="col-2"></div> <!-- Empty column for left margin -->
         <div class="col-8">
+
           <h2>Welcome to the Perl Ad Server.</h2>
+
           <p>This site gives you a simple way to help to advertise Perl
             events.</p>
           <p>There may well be an advertising banner at the very top of this
@@ -43,35 +45,21 @@
           <p>We may be running more than one ad simultaneously. Your site will
             display one at random.</p>
           <p>Feel free to remove the Javascript whenever you like.</p>
-          <h2>Advertising</h2>
-          <p>If you want to advertise with us, it's really not very high-tech.
-            You have two options:</p>
-          <ul>
-            <li>Send us a <a href="https://github.com/PerlToolsTeam/perl-ads/pulls">pull request</a>
-              (you'll want to edit the file <a href="https://github.com/PerlToolsTeam/perl-ads/blob/main/docs/perl-ads.json"><tt>perl-ads.json</tt></a>)</li>
-            <li>Raise an <a href="https://github.com/PerlToolsTeam/perl-ads/issues">issue</a> if you'd like more help</li>
-          </ul>
-          <h2>JSON format</h2>
-          <p>Entries in <tt>perlads.json</tt> should have the following
-            attributes:</p>
-          <ul>
-            <li><b>title</b> - the title of the event</li>
-            <li><b>description</b> - a brief description of the event</li>
-            <li><b>link</b> - a link to the web site for the event</li>
-            <li><b>start</b> (optional) - the date when this ad should start
-              appearing</li>
-            <li><b>end</b> (optional) - the date when this ad should stop
-              appearing</li>
-          </ul>
-          <p>The optional <tt>start</tt> and <tt>end</tt> attributes are so the
-            people running the ad server don't have to add and remove the ads
-            in real time :-)</p>
-          <h2>Placement</h2>
+
+          <h2>More details</h2>
+
+          <p>If you want more control over the placement or formatting of
+            our ads, then read the sections below.</p>
+
+          <h3>Placement</h3>
+
           <p>The default behaviour of the Javascript is to add the ad to the
             very top of the page. If you want to put it somewhere else on the
             page, then create a <tt>&lt;div></tt> element with the ID
             "perl-ad-target" and the ad will be inserted there.</p>
-          <h2>CSS</h2>
+
+          <h3>CSS</h3>
+
           <p>In order to make it easier to style the ads so they fit in with
             the look and feel of your site, the HTML elements that we add
             to your site all have CSS IDs:</p>
@@ -88,7 +76,36 @@
             <a href="https://github.com/PerlToolsTeam/perl-ads/issues">raise an
               issue</a>
             and we'll see what we can do.</p>
-          <h2>Date format for ads</h2>
+
+          <h2>Advertising</h2>
+
+          <p>If you want to advertise with us, it's really not very high-tech.
+            You have two options:</p>
+          <ul>
+            <li>Send us a <a href="https://github.com/PerlToolsTeam/perl-ads/pulls">pull request</a>
+              (you'll want to edit the file <a href="https://github.com/PerlToolsTeam/perl-ads/blob/main/docs/perl-ads.json"><tt>perl-ads.json</tt></a>)</li>
+            <li>Raise an <a href="https://github.com/PerlToolsTeam/perl-ads/issues">issue</a> if you'd like more help</li>
+          </ul>
+
+          <h3>JSON format</h3>
+
+          <p>Entries in <tt>perlads.json</tt> should have the following
+            attributes:</p>
+          <ul>
+            <li><b>title</b> - the title of the event</li>
+            <li><b>description</b> - a brief description of the event</li>
+            <li><b>link</b> - a link to the web site for the event</li>
+            <li><b>start</b> (optional) - the date when this ad should start
+              appearing</li>
+            <li><b>end</b> (optional) - the date when this ad should stop
+              appearing</li>
+          </ul>
+          <p>The optional <tt>start</tt> and <tt>end</tt> attributes are so the
+            people running the ad server don't have to add and remove the ads
+            in real time :-)</p>
+
+          <h3>Date format for ads</h3>
+
           <p>The JSON objects for ads can include optional <tt>start</tt> and
             <tt>end</tt> keys to specify the date range during which the ad
             should be displayed. These keys are optional, but if provided, they
