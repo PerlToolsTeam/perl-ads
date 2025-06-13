@@ -68,5 +68,27 @@
       "link" : "https://neilb.org/2013/07/24/adopt-a-module.html",
       "publisher" : "cpansec",
       "title" : "CPAN Security Tip #2/3"
+   },
+   {
+      "description" : "A Perl-adjacent maybe-podcast.",
+      "link" : "https://underbar.cpan.io/",
+      "publisher" : "the unberbar",
+      "title" : "The Underbar"
+   },
+   {
+      "description" : "Perl 42",
+      "start" : "2025-06-13",
+      "end" : "2025-07-11",
+      "link" : "https://underbar.cpan.io/",
+      "publisher" : "the unberbar",
+      "title" : "The Underbar, episode 2"
+   },
+   {
+      "description" : "MetaCPAN",
+      "start" : "2025-07-12",
+      "end" : "2025-08-09",
+      "link" : "https://underbar.cpan.io/",
+      "publisher" : "the unberbar",
+      "title" : "The Underbar, episode 3"
    }
 ]
