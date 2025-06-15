@@ -36,7 +36,21 @@ function initializeAds() {
 
   const displayAd = (data) => {
     const currentDate = new Date().toISOString().split('T')[0]; // Get current date in YYYY-MM-DD format
+    const currentDomain = window.location.hostname;
+
     const validAds = data.filter(ad => {
+      // Check domain first - don't show ads for the current domain
+      try {
+        const adLinkDomain = new URL(ad.link).hostname;
+        if (adLinkDomain === currentDomain) {
+          return false;
+        }
+      } catch (e) {
+        console.error('Invalid URL in ad:', ad.link);
+        return false;
+      }
+
+      // Then check date validity
       const startDate = ad.start ? new Date(ad.start) : null;
       const endDate = ad.end ? new Date(ad.end) : null;
 
@@ -46,9 +60,9 @@ function initializeAds() {
         return currentDate >= ad.start;
       } else if (endDate) {
         return currentDate <= ad.end;
-      } else {
-        return true; // Ads without start and end dates are always valid
       }
+
+      return true; // Ads without start and end dates are always valid
     });
 
     if (validAds.length === 0) {
