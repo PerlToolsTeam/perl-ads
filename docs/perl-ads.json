@@ -90,5 +90,13 @@
       "link" : "https://underbar.cpan.io/",
       "publisher" : "the-underbar",
       "title" : "The Underbar, episode 3"
+   },
+   {
+      "description" : "See what's new",
+      "start" : "2025-07-03",
+      "end" : "2025-08-31",
+      "link" : "https://perldoc.perl.org/perldelta",
+      "publisher" : "perl-tools-team",
+      "title" : "Perl 5.42 is released"
    }
 ]
