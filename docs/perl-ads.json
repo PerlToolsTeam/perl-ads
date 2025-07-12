@@ -76,20 +76,20 @@
       "title" : "The Underbar"
    },
    {
-      "description" : "Perl 42",
-      "start" : "2025-06-13",
-      "end" : "2025-07-11",
+      "description" : "Cyber Resilience Act",
+      "start" : "2025-09-06",
+      "end" : "2025-09-27",
       "link" : "https://underbar.cpan.io/",
       "publisher" : "the-underbar",
-      "title" : "The Underbar, episode 2"
+      "title" : "The Underbar, episode 4"
    },
    {
-      "description" : "MetaCPAN",
-      "start" : "2025-07-12",
-      "end" : "2025-08-09",
+      "description" : "Test::Smoke",
+      "start" : "2025-09-27",
+      "end" : "2025-10-10",
       "link" : "https://underbar.cpan.io/",
       "publisher" : "the-underbar",
-      "title" : "The Underbar, episode 3"
+      "title" : "The Underbar, episode 5"
    },
    {
       "description" : "See what's new",
