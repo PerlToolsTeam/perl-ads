@@ -1,40 +1,184 @@
-pre {
-  background-color: #333;
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  display: flex;
-  align-items: center;
+/* -------------------------------
+   Perl Ad Server — Drop-in Styles
+   ------------------------------- */
+
+/* Font (lightweight import) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Theme tokens */
+:root{
+  --brand-primary:#007bff;
+  --brand-secondary:#6610f2;
+  --ink:#1b1f23;
+  --ink-muted:#495057;
+  --surface:#ffffff;
+  --surface-muted:#f8f9fa;
+  --border:#e5e7eb;
+  --code-bg:#2d2d2d;
+  --accent:#17a2b8;
+  --success:#28a745;
 }
-code {
-  color: #fff;
-  display: inline;
+
+/* Base */
+html,body{height:100%;}
+body{
+  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--surface);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
-.copy-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 14px;
-  line-height: 1;
-  margin-left: 10px;
-  position: absolute;
-  right: 15px;
+
+a{
+  color:var(--brand-primary);
+  text-decoration: none;
 }
-.flash-message {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #28a745;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  z-index: 1000;
+a:hover{
+  text-decoration: underline;
 }
+
+main.container{
+  padding-top:2rem;
+  padding-bottom:2rem;
+}
+
+/* Header */
+header{
+  background: linear-gradient(135deg,var(--brand-primary),var(--brand-secondary));
+  box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
+}
+header h1{
+  font-weight:600;
+  letter-spacing:.2px;
+  margin:0;
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+}
+header img{
+  max-height:40px;
+  width:auto;
+  vertical-align:middle;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,.25));
+}
+
+/* Headings */
+h2{
+  margin-top:2rem;
+  margin-bottom:.75rem;
+  font-weight:600;
+}
+h3{
+  margin-top:1.5rem;
+  margin-bottom:.5rem;
+  font-weight:600;
+  color:var(--ink-muted);
+}
+
+/* Lists */
+ul {
+/*  border-left: 2px solid var(--border); */
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+ul li {
+  margin: 0.3rem 0;
+}
+
+
+ul.carded {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+ul.carded li {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+}
+
+
+/* Code snippet block */
+pre{
+  background:var(--code-bg);
+  color:#fff;
+  padding:12px 44px 12px 12px; /* room for copy btn */
+  border-radius:10px;
+  position:relative;
+  overflow:auto;
+  margin:1rem 0;
+  display:block;
+  box-shadow:0 4px 10px rgba(0,0,0,.25);
+}
+code{
+  color:#fff;
+  font-size:.95rem;
+  white-space:pre-wrap;
+  word-break:break-word;
+}
+
+/* Copy button */
+.copy-button{
+  position:absolute;
+  top:8px;
+  right:10px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:34px;
+  height:34px;
+  border:none;
+  border-radius:8px;
+  background:var(--accent);
+  color:#fff;
+  cursor:pointer;
+  transition: transform .15s ease, background .25s ease, box-shadow .25s ease;
+  box-shadow:0 2px 6px rgba(0,0,0,.25);
+}
+.copy-button:hover{ background:#138496; transform: translateY(-1px); }
+.copy-button:active{ transform: translateY(0); }
+
+/* Footer */
+footer{
+  background:var(--surface-muted);
+  border-top:1px solid var(--border);
+  font-size:.95rem;
+}
+footer p{ margin:0; }
+
+/* Flash message (works with current JS; .show class optional) */
+.flash-message{
+  position:fixed;
+  top:20px;
+  right:20px;
+  background:var(--success);
+  color:#fff;
+  padding:10px 16px;
+  border-radius:10px;
+  opacity:0;
+  transform: translateY(-12px);
+  transition: opacity .5s ease, transform .5s ease;
+  z-index:1000;
+  box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+/* If you ever add/remove the class in JS, this also animates */
+.flash-message.show{
+  opacity:1 !important;
+  transform: translateY(0);
+}
+
+/* Small niceties */
+tt, code tt { 
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.lead{ color:var(--ink-muted); }
+
+/* Responsive tweaks */
+@media (max-width: 575.98px){
+  header img{ max-height:34px; }
+  pre{ padding-right: 42px; }
+}
+

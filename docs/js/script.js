@@ -9,8 +9,9 @@ function copyToClipboard() {
 
 function showFlashMessage() {
   const flashMessage = document.getElementById('flash-message');
-  flashMessage.style.opacity = 1;
+  flashMessage.classList.add('show');
   setTimeout(() => {
-    flashMessage.style.opacity = 0;
-  }, 10000); // 10 seconds
+    flashMessage.classList.remove('show');
+  }, 3000);
 }
+
