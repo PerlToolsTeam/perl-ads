@@ -15,3 +15,8 @@ function showFlashMessage() {
   }, 3000);
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  const triggers = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  triggers.forEach(el => new bootstrap.Tooltip(el));
+});
+
