@@ -69,14 +69,20 @@ function initializeAds() {
       return; // No valid ads to display
     }
 
+    const target = document.getElementById('perl-ad-target');
+
     const randomAd = validAds[Math.floor(Math.random() * validAds.length)];
 
     const adContainer = document.createElement('div');
     adContainer.id = 'perl-ad';
-    adContainer.style.textAlign = 'center';
-    adContainer.style.padding = '0.125rem';
-    adContainer.style.margin = '0';
-    adContainer.style.border = '0 solid inherit';
+    // Add our custom styles unless the user has opted out by having a
+    // #perl-ad-target element with the data-no-styles attribute.
+    if(!target || target.dataset.noStyles === undefined) {
+       adContainer.style.textAlign = 'center';
+       adContainer.style.padding = '0.125rem';
+       adContainer.style.margin = '0';
+       adContainer.style.border = '0 solid inherit';
+    }
 
     const adTitle = document.createElement('span');
     adTitle.id = 'perl-ad-title';
@@ -105,7 +111,6 @@ function initializeAds() {
 
     adContainer.appendChild(adParagraph);
 
-    const target = document.getElementById('perl-ad-target');
     if (target) {
       target.appendChild(adContainer);
     } else {
