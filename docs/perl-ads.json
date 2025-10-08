@@ -1,38 +1,44 @@
 [
    {
       "description" : "Add a SECURITY.md policy to your favorite CPAN dists!",
-      "end" : "2026-04-30",
       "title" : "CPAN Security Tip #1/3",
       "publisher" : "cpansec",
-      "link" : "https://security.metacpan.org/docs/guides/security-policy-for-authors.html"
+      "link" : "https://security.metacpan.org/docs/guides/security-policy-for-authors.html",
+      "end" : "2026-04-30"
    },
    {
-      "link" : "https://security.metacpan.org/docs/report.html",
-      "publisher" : "cpansec",
+      "end" : "2026-04-30",
       "title" : "CPAN Security Tip #3/3",
-      "end" : "2026-04-30",
-      "description" : "Get help with reporting or fixing a security issue on CPAN!"
+      "description" : "Get help with reporting or fixing a security issue on CPAN!",
+      "link" : "https://security.metacpan.org/docs/report.html",
+      "publisher" : "cpansec"
    },
    {
-      "link" : "https://neilb.org/2013/07/24/adopt-a-module.html",
-      "end" : "2026-04-30",
+      "description" : "Make sure none of your favourite CPAN dists are unmaintained!",
       "title" : "CPAN Security Tip #2/3",
+      "link" : "https://neilb.org/2013/07/24/adopt-a-module.html",
       "publisher" : "cpansec",
-      "description" : "Make sure none of your favourite CPAN dists are unmaintained!"
+      "end" : "2026-04-30"
    },
    {
-      "link" : "https://underbar.cpan.io/",
-      "description" : "A Perl-adjacent maybe-podcast.",
       "title" : "The Underbar",
+      "description" : "A Perl-adjacent maybe-podcast.",
+      "link" : "https://underbar.cpan.io/",
       "publisher" : "the-underbar"
    },
    {
-      "title" : "The Underbar, episode 5",
-      "end" : "2025-10-10",
       "start" : "2025-09-27",
-      "link" : "https://underbar.cpan.io/",
+      "description" : "Test::Smoke",
       "publisher" : "the-underbar",
-      "description" : "Test::Smoke"
+      "end" : "2025-10-10",
+      "title" : "The Underbar, episode 5",
+      "link" : "https://underbar.cpan.io/"
+   },
+   {
+      "description" : "Perl/Python Developer, Addison, TX (TEKsystems)",
+      "title" : "Perl Jobs",
+      "link" : "https://jobs.perl.org/job/22048",
+      "publisher" : "perljobs"
    }
 ]
 
