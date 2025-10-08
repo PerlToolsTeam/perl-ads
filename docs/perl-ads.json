@@ -1,102 +1,38 @@
 [
    {
-      "description" : "Paris, France - May 24-25",
-      "end" : "2025-05-26",
-      "link" : "https://forum.openfoodfacts.org/t/hackathon-perl-open-food-facts-in-paris-2025/1936",
-      "publisher" : "open-foods-facts",
-      "title" : "Perl x Open Food Facts Hackathon"
-   },
-   {
-      "description" : "The yearly BBQ by Vienna.pm on Donauinsel",
-      "end" : "2025-06-13",
-      "link" : "https://vienna.pm.org/kamelgrillen.html",
-      "publisher" : "vienna-pm",
-      "title" : "Vienna.pm BBQ"
-   },
-   {
-      "description" : "Posted: 2025-05-15",
-      "end" : "2025-06-19",
-      "link" : "https://jobs.perl.org/job/22043",
-      "publisher" : "jobs.perl.org",
-      "title" : "Senior Software Engineer - Filter and Firewall- Remote ( UK based), Leeds, UK. (Smoothwall by QORIA)"
-   },
-   {
-      "description" : "Posted: 2025-06-02",
-      "end" : "2025-06-19",
-      "link" : "https://jobs.perl.org/job/22042",
-      "publisher" : "jobs.perl.org",
-      "title" : "Engineering Manager - Remote (UK based), London (remote) (NewsNow)"
-   },
-   {
-      "description" : "Greenville, South Carolina - June 27-29",
-      "end" : "2025-06-29",
-      "link" : "https://tprc.us/",
-      "publisher" : "tprf",
-      "title" : "The Perl and Raku Conference 2025"
-   },
-   {
-      "description" : "Sponsoring The Perl and Raku Conference 2025",
-      "end" : "2025-06-29",
-      "link" : "https://www.perl.com/article/from-code-to-community-sponsoring-tprc-2025/",
-      "publisher" : "tprf",
-      "title" : "From Code to Community"
-   },
-   {
-      "description" : "Hybrid / Austin, Texas July 3-4, 2025",
-      "end" : "2025-07-05",
-      "link" : "https://www.papercall.io/perlcommunity",
-      "publisher" : "perl-community",
-      "title" : "Call for Participation - Perl Community Conference, Summer 2025"
-   },
-   {
       "description" : "Add a SECURITY.md policy to your favorite CPAN dists!",
       "end" : "2026-04-30",
-      "link" : "https://security.metacpan.org/docs/guides/security-policy-for-authors.html",
+      "title" : "CPAN Security Tip #1/3",
       "publisher" : "cpansec",
-      "title" : "CPAN Security Tip #1/3"
+      "link" : "https://security.metacpan.org/docs/guides/security-policy-for-authors.html"
    },
    {
-      "description" : "Get help with reporting or fixing a security issue on CPAN!",
-      "end" : "2026-04-30",
       "link" : "https://security.metacpan.org/docs/report.html",
       "publisher" : "cpansec",
-      "title" : "CPAN Security Tip #3/3"
-   },
-   {
-      "description" : "Make sure none of your favourite CPAN dists are unmaintained!",
+      "title" : "CPAN Security Tip #3/3",
       "end" : "2026-04-30",
+      "description" : "Get help with reporting or fixing a security issue on CPAN!"
+   },
+   {
       "link" : "https://neilb.org/2013/07/24/adopt-a-module.html",
+      "end" : "2026-04-30",
+      "title" : "CPAN Security Tip #2/3",
       "publisher" : "cpansec",
-      "title" : "CPAN Security Tip #2/3"
+      "description" : "Make sure none of your favourite CPAN dists are unmaintained!"
    },
    {
+      "link" : "https://underbar.cpan.io/",
       "description" : "A Perl-adjacent maybe-podcast.",
-      "link" : "https://underbar.cpan.io/",
-      "publisher" : "the-underbar",
-      "title" : "The Underbar"
+      "title" : "The Underbar",
+      "publisher" : "the-underbar"
    },
    {
-      "description" : "Cyber Resilience Act",
-      "start" : "2025-09-06",
-      "end" : "2025-09-27",
-      "link" : "https://underbar.cpan.io/",
-      "publisher" : "the-underbar",
-      "title" : "The Underbar, episode 4"
-   },
-   {
-      "description" : "Test::Smoke",
-      "start" : "2025-09-27",
+      "title" : "The Underbar, episode 5",
       "end" : "2025-10-10",
+      "start" : "2025-09-27",
       "link" : "https://underbar.cpan.io/",
       "publisher" : "the-underbar",
-      "title" : "The Underbar, episode 5"
-   },
-   {
-      "description" : "See what's new",
-      "start" : "2025-07-03",
-      "end" : "2025-08-31",
-      "link" : "https://perldoc.perl.org/perldelta",
-      "publisher" : "perl-tools-team",
-      "title" : "Perl 5.42 is released"
+      "description" : "Test::Smoke"
    }
 ]
+
