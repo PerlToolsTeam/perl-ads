@@ -1,0 +1,46 @@
+#!/usr/bin/perl
+#
+# TODO: Wire this up to an Action workflow
+#
+# ./bin/add_some_jobs < docs/perl_ads.json > docs/perl_ads.json.new
+# mv docs/perl_ads.json.new docs/perl_ads.json
+# git commit ...
+
+use strict;
+use warnings;
+
+use feature 'say';
+
+use JSON;
+use Time::Piece;
+use XML::Feed;
+use URI;
+
+my $how_many = shift // 3;
+
+my $parser = JSON->new->pretty;
+
+my $json = do { local $/; <> };
+
+my $ads = $parser->decode($json);
+
+my @filtered_ads = grep {
+  ! exists $_->{publisher} or ! defined $_->{publisher} or $_->{publisher} ne 'perljobs'
+} @$ads;
+
+my $feed_url = "https://jobs.perl.org/rss/standard.rss?limit=$how_many";
+
+my $feed = XML::Feed->parse(URI->new($feed_url));
+
+die "Unable to fetch feed [$feed_url]\n" unless $feed;
+
+for ($feed->entries) {
+  push @filtered_ads, {
+    publisher => 'perljobs',
+    description => $_->title,
+    link => $_->link,
+    title => 'Perl Jobs',
+  };
+}
+
+say $parser->encode(\@filtered_ads);
