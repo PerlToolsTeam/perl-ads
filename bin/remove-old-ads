@@ -23,7 +23,7 @@ my $ads = $parser->decode($json);
 my $today = localtime->ymd;
 
 my @filtered_ads = grep {
-  ! exists $_->{end} or ! defined $_->{end} or $_->{end} gt $today;
+  ! exists $_->{end} or ! defined $_->{end} or $_->{end} ge $today;
 } @$ads;
 
 say $parser->encode(\@filtered_ads);
