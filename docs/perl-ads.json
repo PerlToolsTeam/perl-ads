@@ -27,12 +27,20 @@
       "publisher" : "the-underbar"
    },
    {
-      "start" : "2025-09-27",
-      "description" : "Test::Smoke",
+      "start" : "2025-10-10",
+      "description" : "CPAN Testers",
       "publisher" : "the-underbar",
-      "end" : "2025-10-10",
-      "title" : "The Underbar, episode 5",
-      "link" : "https://underbar.cpan.io/"
+      "end" : "2025-11-14",
+      "title" : "The Underbar, episode 6",
+      "link" : "https://underbar.cpan.io/episode/6"
+   },
+   {
+      "start" : "2025-11-15",
+      "description" : "CPAN Security Group",
+      "publisher" : "the-underbar",
+      "end" : "2025-12-12",
+      "title" : "The Underbar, episode 7",
+      "link" : "https://underbar.cpan.io/episode/7"
    },
    {
       "description" : "Perl/Python Developer, Addison, TX (TEKsystems)",
