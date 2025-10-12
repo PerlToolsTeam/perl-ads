@@ -9,20 +9,28 @@
 use strict;
 use warnings;
 
-use feature 'say';
+use feature qw(say fc);
 
 use JSON;
 use Time::Piece;
 use XML::Feed;
 use URI;
 
+binmode STDIN,  ':encoding(UTF-8)';
+binmode STDOUT, ':encoding(UTF-8)';
+binmode STDERR, ':encoding(UTF-8)';
+
 my $how_many = shift // 3;
 
-my $parser = JSON->new->pretty;
+my $parser = JSON->new
+  ->utf8(1)
+  ->pretty(1)
+  ->canonical(1);
 
 my $json = do { local $/; <> };
 
 my $ads = $parser->decode($json);
+die "Top-level JSON must be an array\n" unless ref($ads) eq 'ARRAY';
 
 my @filtered_ads = grep {
   ! exists $_->{publisher} or ! defined $_->{publisher} or $_->{publisher} ne 'perljobs'
@@ -30,7 +38,8 @@ my @filtered_ads = grep {
 
 my $feed_url = "https://jobs.perl.org/rss/standard.rss?limit=$how_many";
 
-my $feed = XML::Feed->parse(URI->new($feed_url));
+my $feed = XML::Feed->parse(URI->new($feed_url))
+  or die "Unable to fetch feed [$feed_url]\n";
 
 die "Unable to fetch feed [$feed_url]\n" unless $feed;
 
@@ -43,4 +52,8 @@ for ($feed->entries) {
   };
 }
 
-say $parser->encode(\@filtered_ads);
+my @sorted_ads = sort {
+  fc $a->{description} cmp fc $b->{description}
+} @filtered_ads;
+
+say $parser->encode(\@sorted_ads);

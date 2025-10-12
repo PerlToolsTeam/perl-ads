@@ -9,12 +9,15 @@
 use strict;
 use warnings;
 
-use feature 'say';
+use feature qw(say fc);
 
 use JSON;
 use Time::Piece;
 
-my $parser = JSON->new->pretty;
+my $parser = JSON->new
+  ->pretty(1)
+  ->canonical(1)
+  ->utf8(1);
 
 my $json = do { local $/; <> };
 
@@ -26,4 +29,9 @@ my @filtered_ads = grep {
   ! exists $_->{end} or ! defined $_->{end} or $_->{end} ge $today;
 } @$ads;
 
-say $parser->encode(\@filtered_ads);
+my @sorted_ads = sort {
+  fc($a->{description} // '') cmp fc($b->{description} // '')
+} @filtered_ads;
+
+# Output canonicalised JSON (keys sorted, pretty, UTF-8)
+say $json->encode(\@sorted_ads);
