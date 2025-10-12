@@ -1,52 +1,51 @@
 [
-   {
-      "description" : "Add a SECURITY.md policy to your favorite CPAN dists!",
-      "title" : "CPAN Security Tip #1/3",
-      "publisher" : "cpansec",
-      "link" : "https://security.metacpan.org/docs/guides/security-policy-for-authors.html",
-      "end" : "2026-04-30"
-   },
-   {
-      "end" : "2026-04-30",
-      "title" : "CPAN Security Tip #3/3",
-      "description" : "Get help with reporting or fixing a security issue on CPAN!",
-      "link" : "https://security.metacpan.org/docs/report.html",
-      "publisher" : "cpansec"
-   },
-   {
-      "description" : "Make sure none of your favourite CPAN dists are unmaintained!",
-      "title" : "CPAN Security Tip #2/3",
-      "link" : "https://neilb.org/2013/07/24/adopt-a-module.html",
-      "publisher" : "cpansec",
-      "end" : "2026-04-30"
-   },
-   {
-      "title" : "The Underbar",
-      "description" : "A Perl-adjacent maybe-podcast.",
-      "link" : "https://underbar.cpan.io/",
-      "publisher" : "the-underbar"
-   },
-   {
-      "start" : "2025-10-10",
-      "description" : "CPAN Testers",
-      "publisher" : "the-underbar",
-      "end" : "2025-11-14",
-      "title" : "The Underbar, episode 6",
-      "link" : "https://underbar.cpan.io/episode/6"
-   },
-   {
-      "start" : "2025-11-15",
-      "description" : "CPAN Security Group",
-      "publisher" : "the-underbar",
-      "end" : "2025-12-12",
-      "title" : "The Underbar, episode 7",
-      "link" : "https://underbar.cpan.io/episode/7"
-   },
-   {
-      "description" : "Perl/Python Developer, Addison, TX (TEKsystems)",
-      "title" : "Perl Jobs",
-      "link" : "https://jobs.perl.org/job/22048",
-      "publisher" : "perljobs"
-   }
+  {
+    "description": "A Perl-adjacent maybe-podcast.",
+    "link": "https://underbar.cpan.io/",
+    "publisher": "the-underbar",
+    "title": "The Underbar"
+  },
+  {
+    "description": "Add a SECURITY.md policy to your favorite CPAN dists!",
+    "end": "2026-04-30",
+    "link": "https://security.metacpan.org/docs/guides/security-policy-for-authors.html",
+    "publisher": "cpansec",
+    "title": "CPAN Security Tip #1/3"
+  },
+  {
+    "description": "CPAN Security Group",
+    "end": "2025-12-12",
+    "link": "https://underbar.cpan.io/episode/7",
+    "publisher": "the-underbar",
+    "start": "2025-11-15",
+    "title": "The Underbar, episode 7"
+  },
+  {
+    "description": "CPAN Testers",
+    "end": "2025-11-14",
+    "link": "https://underbar.cpan.io/episode/6",
+    "publisher": "the-underbar",
+    "start": "2025-10-10",
+    "title": "The Underbar, episode 6"
+  },
+  {
+    "description": "Get help with reporting or fixing a security issue on CPAN!",
+    "end": "2026-04-30",
+    "link": "https://security.metacpan.org/docs/report.html",
+    "publisher": "cpansec",
+    "title": "CPAN Security Tip #3/3"
+  },
+  {
+    "description": "Make sure none of your favourite CPAN dists are unmaintained!",
+    "end": "2026-04-30",
+    "link": "https://neilb.org/2013/07/24/adopt-a-module.html",
+    "publisher": "cpansec",
+    "title": "CPAN Security Tip #2/3"
+  },
+  {
+    "description": "Perl/Python Developer, Addison, TX (TEKsystems)",
+    "link": "https://jobs.perl.org/job/22048",
+    "publisher": "perljobs",
+    "title": "Perl Jobs"
+  }
 ]
-
