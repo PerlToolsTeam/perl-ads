@@ -1,0 +1,34 @@
+name: Canonicalise JSON
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/perl-ads.json'   # adjust to your path
+
+env:
+  JSON_FILE: docs/perl-ads.json
+
+jobs:
+  canon:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # allow pushing the canonicalised commit
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Canonicalise
+        run: |
+          tmp=$(mktemp)
+          jq -S 'sort_by((.description // "") | tostring | ascii_downcase)' "$JSON_FILE" > "$tmp" \
+            && mv "$tmp" "$JSON_FILE"
+          if ! git diff --quiet -- "$JSON_FILE"; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add "$JSON_FILE"
+            git commit -m "Canonicalise JSON (sorted keys; array sorted by .description)"
+            git push
+          else
+            echo "Already canonical."
+          fi
+
