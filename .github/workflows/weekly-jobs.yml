@@ -1,0 +1,68 @@
+# .github/workflows/weekly-jobs.yml
+name: Weekly ads refresh
+
+on:
+  schedule:
+    # Runs every Monday at 06:15 UTC (07:15/06:15 London depending on DST)
+    - cron: '15 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write   # needed to push the commit
+
+concurrency:
+  group: weekly-ads
+  cancel-in-progress: false
+
+env:
+  JSON_FILE: docs/perl-ads.json
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Ensure scripts are executable
+        run: |
+          chmod +x bin/remove-old-ads bin/add-some-jobs
+
+      - name: Set up Perl + jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq cpanminus
+          # Install the Perl modules the scripts need
+          cpanm --quiet --notest JSON XML::Feed URI Time::Piece
+
+      - name: Run filters (remove old ads, then add new jobs)
+        run: |
+          set -euo pipefail
+          tmp="$(mktemp)"
+          bin/remove-old-ads < "$JSON_FILE" | bin/add-some-jobs > "$tmp"
+
+          # Optionally validate JSON structure (fails the job if invalid)
+          jq . "$tmp" >/dev/null
+
+          # Only replace the file if content changed
+          if ! diff -q "$JSON_FILE" "$tmp" >/dev/null; then
+            mv "$tmp" "$JSON_FILE"
+            echo "CHANGED=1" >> "$GITHUB_ENV"
+          else
+            echo "No changes."
+            rm -f "$tmp"
+            echo "CHANGED=0" >> "$GITHUB_ENV"
+          fi
+
+      - name: Commit and push if changed
+        if: env.CHANGED == '1'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$JSON_FILE"
+          git commit -m "Weekly refresh: remove old ads and add some jobs (canonised)"
+          git push
+
