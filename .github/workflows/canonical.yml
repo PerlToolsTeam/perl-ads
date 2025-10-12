@@ -4,6 +4,7 @@ on:
     branches: [ main ]
     paths:
       - 'docs/perl-ads.json'   # adjust to your path
+  workflow_dispatch:
 
 env:
   JSON_FILE: docs/perl-ads.json
