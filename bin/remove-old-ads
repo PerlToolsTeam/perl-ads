@@ -34,4 +34,4 @@ my @sorted_ads = sort {
 } @filtered_ads;
 
 # Output canonicalised JSON (keys sorted, pretty, UTF-8)
-say $json->encode(\@sorted_ads);
+say $parser->encode(\@sorted_ads);
