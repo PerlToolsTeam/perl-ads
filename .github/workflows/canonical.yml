@@ -21,8 +21,7 @@ jobs:
       - name: Canonicalise
         run: |
           tmp=$(mktemp)
-          jq -S 'sort_by((.description // "") | tostring | ascii_downcase)' "$JSON_FILE" > "$tmp" \
-            && mv "$tmp" "$JSON_FILE"
+          bin/canonical < "$JSON_FILE" > "$tmp"
           if ! git diff --quiet -- "$JSON_FILE"; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
