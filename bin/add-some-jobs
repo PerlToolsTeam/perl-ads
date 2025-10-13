@@ -22,10 +22,7 @@ binmode STDERR, ':encoding(UTF-8)';
 
 my $how_many = shift // 3;
 
-my $parser = JSON->new
-  ->utf8(1)
-  ->pretty(1)
-  ->canonical(1);
+my $parser = JSON->new->utf8(1);
 
 my $json = do { local $/; <> };
 

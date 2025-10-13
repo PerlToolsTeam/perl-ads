@@ -14,10 +14,7 @@ use feature qw(say fc);
 use JSON;
 use Time::Piece;
 
-my $parser = JSON->new
-  ->pretty(1)
-  ->canonical(1)
-  ->utf8(1);
+my $parser = JSON->new->utf8(1);
 
 my $json = do { local $/; <> };
 
