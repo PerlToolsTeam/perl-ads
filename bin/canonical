@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if ! command -v jq >/dev/null 2>&1; then
+  echo "Error: jq not found on PATH" >&2
+  exit 127
+fi
+
+# Sort object keys recursively and pretty-print with 3-space indents
+jq -S .
+
