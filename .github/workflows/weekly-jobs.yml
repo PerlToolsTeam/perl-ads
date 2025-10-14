@@ -40,31 +40,13 @@ jobs:
 
       - name: Run filters (remove old ads, then add new jobs)
         run: |
-          set -euo pipefail
-          tmp="$(mktemp)"
-          bin/remove-old-ads < "$JSON_FILE" \
-            | bin/add-some-jobs > \
-            | bin/canonical > "$tmp"
+          bin/weekly-jobs "$JSON_FILE"
 
-          # Optionally validate JSON structure (fails the job if invalid)
-          jq . "$tmp" >/dev/null
-
-          # Only replace the file if content changed
-          if ! diff -q "$JSON_FILE" "$tmp" >/dev/null; then
-            mv "$tmp" "$JSON_FILE"
-            echo "CHANGED=1" >> "$GITHUB_ENV"
-          else
-            echo "No changes."
-            rm -f "$tmp"
-            echo "CHANGED=0" >> "$GITHUB_ENV"
+          if ! git diff --quiet -- "$JSON_FILE"; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add "$JSON_FILE"
+            git commit -m "Canonicalise JSON (sorted keys; array sorted by .description)"
+            git push
           fi
-
-      - name: Commit and push if changed
-        if: env.CHANGED == '1'
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$JSON_FILE"
-          git commit -m "Weekly refresh: remove old ads and add some jobs (canonised)"
-          git push
 

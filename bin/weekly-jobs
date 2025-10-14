@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -euo pipefail
+
+JSON_FILE=$1
+
+tmp="$(mktemp)"
+bin/remove-old-ads < "$JSON_FILE" \
+| bin/add-some-jobs \
+| bin/canonical > "$tmp"
+
+if ! diff -q "$JSON_FILE" "$tmp" >/dev/null; then
+  mv "$tmp" "$JSON_FILE"
+  git diff
+else
+  echo "No change"
+fi
