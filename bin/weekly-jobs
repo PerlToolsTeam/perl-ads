@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-JSON_FILE=$1
+JSON_FILE=${1:-docs/perl-ads.json}
 
 tmp="$(mktemp)"
 bin/remove-old-ads < "$JSON_FILE" \
