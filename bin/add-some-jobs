@@ -35,10 +35,12 @@ my @filtered_ads = grep {
 
 my $feed_url = "https://jobs.perl.org/rss/standard.rss?limit=$how_many";
 
-my $feed = XML::Feed->parse(URI->new($feed_url))
-  or die "Unable to fetch feed [$feed_url]\n";
+my $feed = XML::Feed->parse(URI->new($feed_url));
 
-die "Unable to fetch feed [$feed_url]\n" unless $feed;
+unless ($feed) {
+  warn "Unable to fetch feed [$feed_url]\n";
+  die 'Error: ', XML::Feed->errstr, "\n";
+}
 
 for ($feed->entries) {
   push @filtered_ads, {
