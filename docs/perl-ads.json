@@ -21,14 +21,6 @@
     "title": "The Underbar, episode 7"
   },
   {
-    "description": "CPAN Testers",
-    "end": "2025-11-14",
-    "link": "https://underbar.cpan.io/episodes/6",
-    "publisher": "the-underbar",
-    "start": "2025-10-10",
-    "title": "The Underbar, episode 6"
-  },
-  {
     "description": "Get help with reporting or fixing a security issue on CPAN!",
     "end": "2026-04-30",
     "link": "https://security.metacpan.org/docs/report.html",
