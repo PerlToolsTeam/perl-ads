@@ -46,5 +46,12 @@
     "link": "https://jobs.perl.org/job/22050",
     "publisher": "perljobs",
     "title": "Perl Jobs"
+  },
+  {
+    "description": "Short notice - but it's gonna be great!",
+    "title": "London Perl Workshop, 2025",
+    "link": "https://www.londonperlworkshop.com/",
+    "publisher": "lpw",
+    "end": "2025-11-30"
   }
 ]
