@@ -1,5 +1,12 @@
 [
   {
+    "description": "Tina Müller will speak about openQA (https://open.qa/) and Michael Schröder will cover the Open Build Service (https://openbuildservice.org/).",
+    "end": "2025-12-07",
+    "link": "https://luma.com/v90mkqj5",
+    "publisher": "toronto-perl-mongers",
+    "title": "How SUSE is using Perl"
+  },
+  {
     "description": "A Perl-adjacent maybe-podcast.",
     "link": "https://underbar.cpan.io/",
     "publisher": "the-underbar",
