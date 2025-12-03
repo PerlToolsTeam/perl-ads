@@ -1,5 +1,12 @@
 [
   {
+    "description": "Season 26 brings enough seasonal Perl blogging to make your heart grow three sizes.",
+    "end": "2026-01-01",
+    "link": "https://perladvent.org/2025/",
+    "publisher": "perl-advent",
+    "title": "The 2025 Perl Advent Calendar"
+  },
+  {
     "description": "Tina Müller will speak about openQA and Michael Schröder will cover the Open Build Service.",
     "end": "2025-12-07",
     "link": "https://luma.com/v90mkqj5",
