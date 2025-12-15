@@ -13,14 +13,6 @@
     "title": "CPAN Security Tip #1/3"
   },
   {
-    "description": "CPAN Security Group",
-    "end": "2025-12-12",
-    "link": "https://underbar.cpan.io/episodes/7",
-    "publisher": "the-underbar",
-    "start": "2025-11-15",
-    "title": "The Underbar, episode 7"
-  },
-  {
     "description": "Get help with reporting or fixing a security issue on CPAN!",
     "end": "2026-04-30",
     "link": "https://security.metacpan.org/docs/report.html",
