@@ -33,17 +33,23 @@
     "title": "Perl Jobs"
   },
   {
+    "description": "Perl Developer - Join A Small Team Building Big Things, Austin, Texas (remote) (ClickMagick)",
+    "link": "https://jobs.perl.org/job/21784",
+    "publisher": "perljobs",
+    "title": "Perl Jobs"
+  },
+  {
+    "Publisher": "perlschool",
+    "description": "Practical design patterns for modern Perl",
+    "end": "2026-01-31",
+    "link": "https://perlschool.com/books/design-patterns/",
+    "title": "Design Patterns in Modern Perl"
+  },
+  {
     "description": "Season 26 brings enough seasonal Perl blogging to make your heart grow three sizes.",
     "end": "2026-01-01",
     "link": "https://perladvent.org/2025/",
     "publisher": "perl-advent",
     "title": "The 2025 Perl Advent Calendar"
-  },
-  {
-    "description": "Practical design patterns for modern Perl",
-    "end": "2026-01-31",
-    "link": "https://perlschool.com/books/design-patterns/",
-    "Publisher": "perlschool",
-    "title": "Design Patterns in Modern Perl"
   }
 ]
