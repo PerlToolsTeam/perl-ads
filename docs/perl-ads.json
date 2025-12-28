@@ -57,5 +57,11 @@
     "link": "https://luma.com/perl-maven",
     "publisher": "perl-maven",
     "title": "Live contribution to a Perl project"
+  },
+  {
+    "description": "A collection of news from the Perl community. Published weekly since 2011.",
+    "link": "https://perlweekly.com/",
+    "publisher": "perl-maven",
+    "title": "Perl Weekly newsletter"
   }
 ]
