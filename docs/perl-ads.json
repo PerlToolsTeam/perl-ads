@@ -39,7 +39,7 @@
     "title": "Perl Jobs"
   },
   {
-    "Publisher": "perlschool",
+    "publisher": "perlschool",
     "description": "Practical design patterns for modern Perl",
     "end": "2026-01-31",
     "link": "https://perlschool.com/books/design-patterns/",
