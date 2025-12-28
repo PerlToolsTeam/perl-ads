@@ -51,5 +51,11 @@
     "link": "https://perladvent.org/2025/",
     "publisher": "perl-advent",
     "title": "The 2025 Perl Advent Calendar"
+  },
+  {
+    "description": "Live online events during which we pick a CPAN module, try to understand it (or not), and try to contribute to its development.",
+    "link": "https://luma.com/perl-maven",
+    "publisher": "perl-maven",
+    "title": "Live contribution to a Perl project"
   }
 ]
