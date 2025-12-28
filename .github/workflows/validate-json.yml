@@ -2,6 +2,9 @@ name: Validate JSON Data
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'docs/perl-ads.json'
   pull_request:
     paths:
       - 'docs/perl-ads.json'
