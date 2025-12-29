@@ -6,6 +6,14 @@
     "title": "The Underbar"
   },
   {
+    "description": "A tangent about the Perl Toolchain Summit",
+    "end": "2026-01-09",
+    "link": "https://underbar.cpan.io/episodes/8",
+    "publisher": "the-underbar",
+    "start": "2025-12-29",
+    "title": "The Underbar, episode 8"
+  },
+  {
     "description": "Add a SECURITY.md policy to your favorite CPAN dists!",
     "end": "2026-04-30",
     "link": "https://security.metacpan.org/docs/guides/security-policy-for-authors.html",
