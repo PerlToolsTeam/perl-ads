@@ -6,6 +6,14 @@
     "title": "The Underbar"
   },
   {
+    "description": "A tangent about the Perl Toolchain Summit",
+    "end": "2026-01-09",
+    "link": "https://underbar.cpan.io/episodes/8",
+    "publisher": "the-underbar",
+    "start": "2025-12-29",
+    "title": "The Underbar, episode 8"
+  },
+  {
     "description": "Add a SECURITY.md policy to your favorite CPAN dists!",
     "end": "2026-04-30",
     "link": "https://security.metacpan.org/docs/guides/security-policy-for-authors.html",
@@ -18,6 +26,12 @@
     "link": "https://security.metacpan.org/docs/report.html",
     "publisher": "cpansec",
     "title": "CPAN Security Tip #3/3"
+  },
+  {
+    "description": "Live online events during which we pick a CPAN module, try to understand it (or not), and try to contribute to its development.",
+    "link": "https://luma.com/perl-maven",
+    "publisher": "perl-maven",
+    "title": "Live contribution to a Perl project"
   },
   {
     "description": "Make sure none of your favourite CPAN dists are unmaintained!",
@@ -33,16 +47,10 @@
     "title": "Perl Jobs"
   },
   {
-    "description": "Perl Developer - Join A Small Team Building Big Things, Austin, Texas (remote) (ClickMagick)",
-    "link": "https://jobs.perl.org/job/21784",
-    "publisher": "perljobs",
-    "title": "Perl Jobs"
-  },
-  {
-    "publisher": "perlschool",
     "description": "Practical design patterns for modern Perl",
     "end": "2026-01-31",
     "link": "https://perlschool.com/books/design-patterns/",
+    "publisher": "perlschool",
     "title": "Design Patterns in Modern Perl"
   },
   {
