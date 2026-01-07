@@ -40,12 +40,6 @@
     "title": "Live contribution to a Perl project"
   },
   {
-    "description": "Live online events during which we pick a CPAN module, try to understand it (or not), and try to contribute to its development.",
-    "link": "https://luma.com/perl-maven",
-    "publisher": "perl-maven",
-    "title": "Live contribution to a Perl project"
-  },
-  {
     "description": "Make sure none of your favourite CPAN dists are unmaintained!",
     "end": "2026-04-30",
     "link": "https://neilb.org/2013/07/24/adopt-a-module.html",
