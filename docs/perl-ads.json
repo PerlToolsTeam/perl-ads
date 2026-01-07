@@ -27,7 +27,7 @@
     "title": "CPAN Security Tip #1/3"
   },
   {
-    "description": "Find CPAN modules where you can make some easy contribution and start sending Pull-Requests. Start improving the Perl ecosystem.",
+    "description": "Find CPAN modules where you can make some easy contributions and start sending pull requests. Start improving the Perl ecosystem.",
     "link": "https://cpan-digger.perlmaven.com/",
     "publisher": "perl-maven",
     "title": "CPAN::Digger"
