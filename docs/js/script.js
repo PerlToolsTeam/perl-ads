@@ -1,5 +1,5 @@
-function copyToClipboard() {
-  const codeSnippet = document.getElementById('code-snippet').innerText;
+function copyToClipboard(snippetId) {
+  const codeSnippet = document.getElementById(snippetId).innerText;
   navigator.clipboard.writeText(codeSnippet).then(() => {
     showFlashMessage();
   }).catch(err => {

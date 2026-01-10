@@ -28,127 +28,156 @@
 <main class="container my-5">
   <div class="col-lg-8 mx-auto">
 
-    <h2>Welcome to the Perl Ad Server.</h2>
+    <h2>A tiny banner for Perl community announcements</h2>
 
-    <p>This site gives you a simple way to help to advertise Perl
-      events.</p>
-    <p>There may well be an advertising banner at the very top of this
-      page. You can have one like it on your web site too.</p>
-    <p>Simply add a small piece of Javascript to your site and we'll
-      handle the rest. The Javascript looks like this:</p>
+    <p><b>Perl Ad Server</b> is a one-line JavaScript include that displays a small
+      rotating banner for <b>Perl community announcements</b> (newsletters, podcasts,
+      security tips, jobs, learning resources, and more).</p>
+
+    <p>If there are <b>no active announcements</b>, nothing is displayed and your page
+      stays the same.</p>
+
+    <h2>Choose your path</h2>
+
+    <ul>
+      <li><b><a href="#run">I run a website (show the banner)</a></b><br>
+      You add one script tag (plus a target <code>&lt;div></code> if you want
+      control). Done.</li>
+      <li><b><a href="#publish">I publish announcements (get listed)</a></b><br>
+      You add an entry to <code>perl-ads.json</code> via PR — or open an issue
+      and we’ll help.</li>
+    </ul>
+
+    <h2 id="run">For website owners</h2>
+
+    <h3>1. Add the script</h3>
+
+    <p>Paste this anywhere on your page:</p>
 
     <pre><code class="language-javascript" id="code-snippet">&lt;script src="https://perl-ads.perlhacks.com/perl-ads.js"&gt;&lt;/script&gt;</code>
-      <button class="copy-button" title="Copy code" onclick="copyToClipboard()"><i class="fas fa-copy"></i></button>
+      <button class="copy-button" title="Copy code" onclick="copyToClipboard('code-snippet')"><i class="fas fa-copy"></i></button>
     </pre>
 
-    <p>If we're advertising something, then the banner will appear. If
-      we're not currently running any ads, then nothing will change.</p>
-    <p>We may be running more than one ad simultaneously. Your site will
-      display one at random.</p>
-    <p>Feel free to remove the Javascript whenever you like.</p>
+    <p>That's it.</p>
 
-    <h2>More details</h2>
+    <p><b>What to expect</b></p>
 
-    <p>If you want more control over the placement or formatting of
-      our ads, then read the sections below.</p>
-
-    <h3>Placement</h3>
-
-    <p>The default behaviour of the Javascript is to add the ad to the
-      very top of the page. If you want to put it somewhere else on the
-      page, then create a <tt>&lt;div></tt> element with the ID
-      "perl-ad-target" and the ad will be inserted there.</p>
-
-    <h3>CSS</h3>
-
-    <p>In order to make it easier to style the ads so they fit in with
-      the look and feel of your site, the HTML elements that we add
-      to your site all have CSS IDs:</p>
-    <ul class="carded">
-      <li>The enclosing <tt>&lt;div></tt> has the ID "perl-ad"</li>
-      <li>The <tt>&lt;span></tt> that contains the title has the ID
-        "perl-ad-title"</li>
-      <li>The <tt>&lt;span></tt> that contains the description has the ID
-        "perl-ad-desc"</li>
-      <li>The <tt>&lt;span></tt> that contains the link has the ID
-        "perl-ad-link"</li>
-    </ul>
-
-    <p>By default, we add a few CSS rules to the <tt>&lt;div></tt> that
-      contains our ads. You can turn all of those off by creating a
-      <tt>&lt;div></tt> with the attribute: <tt>data-no-styles</tt>.</p>
-
-    <p><tt>&lt;div id="perl-ad-target" data-no-styles></tt></p>
-
-    <p>If you find you need anything else, then please
-      <a href="https://github.com/PerlToolsTeam/perl-ads/issues">raise an
-        issue</a>
-      and we'll see what we can do.</p>
-
-    <h2>Advertising</h2>
-
-    <p>If you want to advertise with us, it's really not very high-tech.
-      You have two options:</p>
     <ul>
-      <li>Send us a <a href="https://github.com/PerlToolsTeam/perl-ads/pulls">pull request</a>
-        (you'll want to edit the file <a href="https://github.com/PerlToolsTeam/perl-ads/blob/main/docs/perl-ads.json"><tt>perl-ads.json</tt></a>)</li>
-      <li>Raise an <a href="https://github.com/PerlToolsTeam/perl-ads/issues">issue</a> if you'd like more help</li>
+      <li>If there’s an active announcement, you’ll see a banner.</li>
+      <li>If there aren’t any active announcements, nothing shows.</li>
+      <li>If there are multiple announcements, one is shown at random.</li>
+      <li>Remove the script any time.</li>
     </ul>
+
+    <h3>2. Control where it appears (optional)</h3>
+
+    <p>By default, the banner is inserted at the very top of the page.</p>
+
+    <p>To place it somewhere specific, add this element where you want it to appear:</p>
+
+    <pre><code class="language-html" id="div-snippet">&lt;div id="perl-ad-target"&gt;&lt;/div&gt;</code>
+      <button class="copy-button" title="Copy code" onclick="copyToClipboard('div-snippet')"><i class="fas fa-copy"></i></button>
+    </pre>
+
+    <p>If <code>perl-ad-target</code> exists, the banner is inserted there.</p>
+
+    <h3>3. Style it (optional)</h3>
+
+    <p>The markup we insert includes stable IDs, so you can style it with CSS:</p>
+
+    <ul>
+      <li>Container: <code>#perl-ad</code></li>
+      <li>Title: <code>#perl-ad-title</code></li>
+      <li>Description: <code>#perl-ad-desc</code></li>
+      <li>Link: <code>#perl-ad-link</code></li>
+    </ul>
+
+    <p><b>Turn off default styles</b></p>
+
+    <p>By default, Perl Ad Server injects a small set of styles for the banner.</p>
+
+    <p>If you want no injected styles (and will style it yourself), add
+      <code>data-no-styles</code> to the target <code>&lt;div></code>:</p>
+
+    <pre> <code class="language-html" id="div-data-snippet">&lt;div id="perl-ad-target" data-no-styles&gt;&lt;/div&gt;</code> 
+      <button class="copy-button" title="Copy code" onclick="copyToClipboard('div-data-snippet')"><i class="fas fa-copy"></i></button>
+    </pre>
+
+    <p>Want another hook or behavior? Open an issue and describe what you’re trying to do.</p>
+
+    <h2 id="publish">For publishers</h2>
+
+    <h3>What counts as an “announcement”?</h3>
+
+    <p>Anything genuinely useful to the Perl community, like:</p>
+
+    <ul>
+      <li>newsletters and posts</li>
+      <li>podcasts / episodes</li>
+      <li>security guidance</li>
+      <li>contribution opportunities</li>
+      <li>jobs</li>
+      <li>books / courses / learning resources</li>
+    </ul>
+
+    <h3>Add your announcement</h3>
+
+    <p>You have two easy options:</p>
+
+    <ol>
+      <li>Send a pull request updating <code>perl-ads.json</code></li>
+      <li>Open an issue if you’d like help writing or formatting your entry</li>
+    </ol>
 
     <h3>JSON format</h3>
 
-    <p>Entries in <tt>perlads.json</tt> should have the following
-      attributes:</p>
-    <ul class="carded">
-      <li><b>title</b> - the title of the event</li>
-      <li><b>description</b> - a brief description of the event</li>
-      <li><b>link</b> - a link to the web site for the event</li>
-      <li><b>publisher</b> - an identifier for the organisation publishing
-        this ad</li>
-      <li><b>start</b> (optional) - the date when this ad should start
-        appearing</li>
-      <li><b>end</b> (optional) - the date when this ad should stop
-        appearing</li>
-    </ul>
-    <p>The optional <tt>start</tt> and <tt>end</tt> attributes are so the
-      people running the ad server don't have to add and remove the ads
-      in real time :-)</p>
-    <p>In the future, the <tt>publisher</tt> attribute may be used by
-      websites to filter the ads that are published on their sites</li>
-
-    <h3>Date format for ads</h3>
-
-    <p>The JSON objects for ads can include optional <tt>start</tt> and
-      <tt>end</tt> keys to specify the date range during which the ad
-      should be displayed. These keys are optional, but if provided, they
-      must follow the specified date format.</p>
-    <p>The date format for the <tt>start</tt> and <tt>end</tt> keys is
-      <tt>YYYY-MM-DD</tt>. For example, a valid date would be
-      <tt>2025-06-27</tt>.</p>
-    <p>Ads without <tt>start</tt> and <tt>end</tt> keys are considered
-      always valid and will be displayed regardless of the current
-      date.</p>
-
-    <h2>In the wild</h2>
-
-    <p>A list of places where Perl Ads can be seen. If you want your site to
-      be added to this list, just
-      <a href="https://github.com/PerlToolsTeam/perl-ads/issues">let us know</a>.</p>
+    <p>Each entry in <code>perl-ads.json</code> can include:</p>
 
     <ul>
-      <li><a href="https://cpandashboard.com/">CPAN Dashboard</a></li>
-      <li><a href="https://metacpan.org/">MetaCPAN</a></li>
-      <li><a href="https://perlhacks.com/">Perl Hacks</a></li>
-      <li><a href="https://perl.theplanetarium.org/">Planet Perl</a>
-      <li><a href="https://underbar.cpan.io/">The Underbar</a></li>
+      <li><b>title</b> — the title of the announcement</li>
+      <li><b>description</b> — a short description</li>
+      <li><b>link</b> — the URL to send people to</li>
+      <li><b>publisher</b> — an identifier for the organization or project publishing it</li>
+      <li><b>start</b> (optional) — the first date it should appear</li>
+      <li><b>end</b> (optional) — the last date it should appear</li>
     </ul>
+
+    <p>Why the dates? So announcements can automatically start/stop without anyone
+      needing to babysit the rotation.</p>
+
+    <p>In the future, publisher may be used by websites to filter which announcements
+      they display.</p>
+
+    <b>Date format</b>
+
+  <p>If you include <code>start</code> and/or <code>end</code>, use:</p>
+
+  <ul>
+    <li><code>YYYY-MM-DD</code> (example: <code>2026-01-31</code>)</li>
+  </ul>
+
+  <p>Announcements without start and end are treated as always valid.</p>
+
+  <h2>In the wild</h2>
+
+  <p>A list of places where Perl Ads can be seen. If you want your site to
+    be added to this list, just
+    <a href="https://github.com/PerlToolsTeam/perl-ads/issues">let us know</a>.</p>
+
+  <ul>
+    <li><a href="https://cpandashboard.com/">CPAN Dashboard</a></li>
+    <li><a href="https://metacpan.org/">MetaCPAN</a></li>
+    <li><a href="https://perlhacks.com/">Perl Hacks</a></li>
+    <li><a href="https://perl.theplanetarium.org/">Planet Perl</a>
+    <li><a href="https://underbar.cpan.io/">The Underbar</a></li>
+  </ul>
 
   </div>
 </main>
 
 <footer class="bg-light text-center py-3">
   <p>
-    &copy; 2024 <a href="https://github.com/PerlToolsTeam">Perl Tools Team</a> /
+    &copy; 2026 <a href="https://github.com/PerlToolsTeam">Perl Tools Team</a> /
     Code <a href="https://github.com/PerlToolsTeam/perl-ads">on GitHub</a> /
     Patches welcome /
     <a href="/privacy/"
