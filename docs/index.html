@@ -163,6 +163,25 @@
   <p>Announcements without <code>start</code> and <code>end</code> are treated as
     always valid.</p>
 
+  <h3>Tracking and analytics</h3>
+
+  <p>To help you understand where your traffic is coming from, Perl Ads
+    automatically appends standard UTM tracking parameters to all outgoing links:</p>
+
+  <ul>
+    <li><code>utm_source=perl-ads</code> — identifies traffic from the Perl Ads Server</li>
+    <li><code>utm_medium=banner</code> — specifies the ad format type</li>
+    <li><code>utm_campaign={publisher}</code> — your publisher identifier from <code>perl-ads.json</code></li>
+    <li><code>utm_content={hostname}</code> — the website displaying your ad</li>
+  </ul>
+
+  <p>These parameters work with Google Analytics and most analytics platforms,
+    allowing you to track which sites are sending you traffic and measure the
+    effectiveness of your announcements.</p>
+
+  <p><b>Example:</b> A link to <code>https://example.com/</code> becomes
+    <code>https://example.com/?utm_source=perl-ads&amp;utm_medium=banner&amp;utm_campaign=your-publisher&amp;utm_content=sitename.com</code></p>
+
   <h2>In the wild</h2>
 
   <p>A list of places where Perl Ads can be seen. If you want your site to
