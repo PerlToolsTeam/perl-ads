@@ -1,6 +1,6 @@
 [
   {
-    "description": "Perl community news roundup — published weekly since 2011.",
+    "description": "Perl community news roundup - published weekly since 2011.",
     "link": "https://perlweekly.com/",
     "publisher": "perl-maven",
     "title": "Perl Weekly newsletter"
@@ -25,7 +25,7 @@
     "title": "Perl Jobs"
   },
   {
-    "description": "Find CPAN dists needing help — make your first contribution.",
+    "description": "Find CPAN dists needing help - make your first contribution.",
     "link": "https://cpan-digger.perlmaven.com/",
     "publisher": "perl-maven",
     "title": "CPAN::Digger"
