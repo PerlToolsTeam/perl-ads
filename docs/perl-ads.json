@@ -56,5 +56,11 @@
     "link": "https://perlschool.com/books/design-patterns/",
     "publisher": "perlschool",
     "title": "Design Patterns in Modern Perl"
+  },
+  {
+    "description": "A single place to browse Perl writing from across the community",
+    "link": "https://perl.theplanetarium.org/",
+    "publisher": "perltoolsteam",
+    "title": "Planet Perl"
   }
 ]
