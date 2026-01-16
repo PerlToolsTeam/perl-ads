@@ -99,12 +99,17 @@ function initializeAds() {
 
     const link = document.createElement('a');
     // Add UTM tracking parameters to the link
-    const linkUrl = new URL(randomAd.link);
-    linkUrl.searchParams.set('utm_source', 'perl-ads');
-    linkUrl.searchParams.set('utm_medium', 'banner');
-    linkUrl.searchParams.set('utm_campaign', randomAd.publisher || 'unknown');
-    linkUrl.searchParams.set('utm_content', window.location.hostname);
-    link.href = linkUrl.toString();
+    try {
+      const linkUrl = new URL(randomAd.link);
+      linkUrl.searchParams.set('utm_source', 'perl-ads');
+      linkUrl.searchParams.set('utm_medium', 'banner');
+      linkUrl.searchParams.set('utm_campaign', randomAd.publisher || 'unknown');
+      linkUrl.searchParams.set('utm_content', window.location.hostname);
+      link.href = linkUrl.toString();
+    } catch (e) {
+      // Fallback to original link if URL parsing fails
+      link.href = randomAd.link;
+    }
     link.target = '_blank';
     link.textContent = 'Learn more';
 
