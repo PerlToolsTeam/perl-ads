@@ -98,7 +98,13 @@ function initializeAds() {
     adLink.id = 'perl-ad-link';
 
     const link = document.createElement('a');
-    link.href = randomAd.link;
+    // Add UTM tracking parameters to the link
+    const linkUrl = new URL(randomAd.link);
+    linkUrl.searchParams.set('utm_source', 'perl-ads');
+    linkUrl.searchParams.set('utm_medium', 'banner');
+    linkUrl.searchParams.set('utm_campaign', randomAd.publisher || 'unknown');
+    linkUrl.searchParams.set('utm_content', window.location.hostname);
+    link.href = linkUrl.toString();
     link.target = '_blank';
     link.textContent = 'Learn more';
 
