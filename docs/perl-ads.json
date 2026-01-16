@@ -1,6 +1,6 @@
 [
   {
-    "description": "A collection of news from the Perl community. Published weekly since 2011.",
+    "description": "Perl community news roundup - published weekly since 2011.",
     "link": "https://perlweekly.com/",
     "publisher": "perl-maven",
     "title": "Perl Weekly newsletter"
@@ -25,7 +25,7 @@
     "title": "Perl Jobs"
   },
   {
-    "description": "Find CPAN modules where you can make some easy contributions and start sending pull requests. Start improving the Perl ecosystem.",
+    "description": "Find CPAN dists needing help - make your first contribution.",
     "link": "https://cpan-digger.perlmaven.com/",
     "publisher": "perl-maven",
     "title": "CPAN::Digger"
@@ -38,7 +38,7 @@
     "title": "CPAN Security Tip #3/3"
   },
   {
-    "description": "Live online events during which we pick a CPAN module, try to understand it (or not), and try to contribute to its development.",
+    "description": "Join live events to explore a CPAN module and contribute.",
     "link": "https://luma.com/perl-maven",
     "publisher": "perl-maven",
     "title": "Live contribution to a Perl project"
