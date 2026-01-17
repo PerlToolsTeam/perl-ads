@@ -71,10 +71,22 @@
     "title": "FOSDEM Community dinner"
   },
  {
-    "description": "Visit the Perl and Raku stand at FOSDEM 2026 Building K stand A9",
+    "description": "Visit the Perl and Raku stand at FOSDEM - Building K stand A9",
     "link": "https://fosdem.org/2026/stands/",
     "end": "2026-02-01",
     "publisher": "TPRF",
-    "title": "Perl and Raku at FOSDEM 2026"
+    "title": "Perl and Raku at FOSDEM"
+  },
+ {
+    "title": "Support Perl and Raku",
+    "description": "Financial support is essential for our sustainability - donate today",
+    "link": "https://perlfoundation.org/donate.html",
+    "publisher": "TPRF"
+  },
+ {
+    "title": "The Perl and Raku Foundation",
+    "description": "Supporting our communities",
+    "link": "https://perlfoundation.org/",
+    "publisher": "TPRF"
   }
 ]
