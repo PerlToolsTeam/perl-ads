@@ -63,27 +63,27 @@
     "publisher": "perltoolsteam",
     "title": "Planet Perl"
   },
-   {
+  {
     "description": "Join us for the Perl and Raku FOSDEM community dinner 31st January 2026",
     "link": "https://perlfoundation.org/fosdem/community-dinner.html",
     "end": "2026-01-31",
     "publisher": "TPRF",
     "title": "FOSDEM Community dinner"
   },
- {
+  {
     "description": "Visit the Perl and Raku stand at FOSDEM - Building K stand A9",
     "link": "https://fosdem.org/2026/stands/",
     "end": "2026-02-01",
     "publisher": "TPRF",
     "title": "Perl and Raku at FOSDEM"
   },
- {
+  {
     "title": "Support Perl and Raku",
     "description": "Financial support is essential for our sustainability - donate today",
     "link": "https://perlfoundation.org/donate.html",
     "publisher": "TPRF"
   },
- {
+  {
     "title": "The Perl and Raku Foundation",
     "description": "Supporting our communities",
     "link": "https://perlfoundation.org/",
