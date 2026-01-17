@@ -88,5 +88,11 @@
     "description": "Supporting our communities",
     "link": "https://perlfoundation.org/",
     "publisher": "TPRF"
+  },
+  {
+    "title": "The Perl Community",
+    "description": "Friendly Perl people on Facebook",
+    "link": "https://www.facebook.com/groups/perlcommunity",
+    "publisher": "perltoolsteam"
   }
 ]
