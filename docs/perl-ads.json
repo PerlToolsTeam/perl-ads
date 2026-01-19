@@ -1,15 +1,15 @@
 [
   {
-    "description": "Perl community news roundup - published weekly since 2011.",
-    "link": "https://perlweekly.com/",
-    "publisher": "perl-maven",
-    "title": "Perl Weekly newsletter"
-  },
-  {
     "description": "A Perl-adjacent maybe-podcast.",
     "link": "https://underbar.cpan.io/",
     "publisher": "the-underbar",
     "title": "The Underbar"
+  },
+  {
+    "description": "A single place to browse Perl writing from across the community",
+    "link": "https://perl.theplanetarium.org/",
+    "publisher": "perltoolsteam",
+    "title": "Planet Perl"
   },
   {
     "description": "Add a SECURITY.md policy to your favorite CPAN dists!",
@@ -20,15 +20,33 @@
   },
   {
     "description": "Catalyst DBIx JS, Phoenix, AZ (Phoenix Fuel)",
+    "link": "https://jobs.perl.org/job/22052",
+    "publisher": "perljobs",
+    "title": "Perl Jobs"
+  },
+  {
+    "description": "Catalyst DBIx JS, Phoenix, AZ (Phoenix Fuel)",
     "link": "https://jobs.perl.org/job/22051",
     "publisher": "perljobs",
     "title": "Perl Jobs"
+  },
+  {
+    "description": "Financial support is essential for our sustainability - donate today",
+    "link": "https://perlfoundation.org/donate.html",
+    "publisher": "TPRF",
+    "title": "Support Perl and Raku"
   },
   {
     "description": "Find CPAN dists needing help - make your first contribution.",
     "link": "https://cpan-digger.perlmaven.com/",
     "publisher": "perl-maven",
     "title": "CPAN::Digger"
+  },
+  {
+    "description": "Friendly Perl people on Facebook",
+    "link": "https://www.facebook.com/groups/perlcommunity",
+    "publisher": "perltoolsteam",
+    "title": "The Perl Community"
   },
   {
     "description": "Get help with reporting or fixing a security issue on CPAN!",
@@ -44,11 +62,24 @@
     "title": "Live contribution to a Perl project"
   },
   {
+    "description": "Join us for the Perl and Raku FOSDEM community dinner 31st January 2026",
+    "end": "2026-01-31",
+    "link": "https://perlfoundation.org/fosdem/community-dinner.html",
+    "publisher": "TPRF",
+    "title": "FOSDEM Community dinner"
+  },
+  {
     "description": "Make sure none of your favourite CPAN dists are unmaintained!",
     "end": "2026-04-30",
     "link": "https://neilb.org/2013/07/24/adopt-a-module.html",
     "publisher": "cpansec",
     "title": "CPAN Security Tip #2/3"
+  },
+  {
+    "description": "Perl community news roundup - published weekly since 2011.",
+    "link": "https://perlweekly.com/",
+    "publisher": "perl-maven",
+    "title": "Perl Weekly newsletter"
   },
   {
     "description": "Practical design patterns for modern Perl",
@@ -58,41 +89,16 @@
     "title": "Design Patterns in Modern Perl"
   },
   {
-    "description": "A single place to browse Perl writing from across the community",
-    "link": "https://perl.theplanetarium.org/",
-    "publisher": "perltoolsteam",
-    "title": "Planet Perl"
-  },
-  {
-    "description": "Join us for the Perl and Raku FOSDEM community dinner 31st January 2026",
-    "link": "https://perlfoundation.org/fosdem/community-dinner.html",
-    "end": "2026-01-31",
+    "description": "Supporting our communities",
+    "link": "https://perlfoundation.org/",
     "publisher": "TPRF",
-    "title": "FOSDEM Community dinner"
+    "title": "The Perl and Raku Foundation"
   },
   {
     "description": "Visit the Perl and Raku stand at FOSDEM - Building K stand A9",
-    "link": "https://fosdem.org/2026/stands/",
     "end": "2026-02-01",
+    "link": "https://fosdem.org/2026/stands/",
     "publisher": "TPRF",
     "title": "Perl and Raku at FOSDEM"
-  },
-  {
-    "title": "Support Perl and Raku",
-    "description": "Financial support is essential for our sustainability - donate today",
-    "link": "https://perlfoundation.org/donate.html",
-    "publisher": "TPRF"
-  },
-  {
-    "title": "The Perl and Raku Foundation",
-    "description": "Supporting our communities",
-    "link": "https://perlfoundation.org/",
-    "publisher": "TPRF"
-  },
-  {
-    "title": "The Perl Community",
-    "description": "Friendly Perl people on Facebook",
-    "link": "https://www.facebook.com/groups/perlcommunity",
-    "publisher": "perltoolsteam"
   }
 ]
