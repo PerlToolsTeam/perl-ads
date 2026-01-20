@@ -100,5 +100,23 @@
     "link": "https://fosdem.org/2026/stands/",
     "publisher": "TPRF",
     "title": "Perl and Raku at FOSDEM"
+  },
+  {
+    "description": "A book about the new features in Perl up to Perl v5.42",
+    "link": "https://perlschool.com/books/perl-new-features/",
+    "publisher": "perlschool",
+    "title": "Perl New Features"
+  },
+  {
+    "description": "A book about interacting with the web with Mojolicious",
+    "link": "https://perlschool.com/books/mojolicious-web-clients/",
+    "publisher": "perlschool",
+    "title": "Mojolicious Web Clients"
+  },
+  {
+    "description": "Additional exercises as a companion for Learning Perl, 4th ed.",
+    "link": "https://perlschool.com/books/learning-perl-exercises/",
+    "publisher": "perlschool",
+    "title": "Learning Perl Exercises"
   }
 ]
