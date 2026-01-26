@@ -1,5 +1,17 @@
 [
   {
+    "description": "A book about interacting with the web with Mojolicious",
+    "link": "https://perlschool.com/books/mojolicious-web-clients/",
+    "publisher": "perlschool",
+    "title": "Mojolicious Web Clients"
+  },
+  {
+    "description": "A book about the new features in Perl up to Perl v5.42",
+    "link": "https://perlschool.com/books/perl-new-features/",
+    "publisher": "perlschool",
+    "title": "Perl New Features"
+  },
+  {
     "description": "A Perl-adjacent maybe-podcast.",
     "link": "https://underbar.cpan.io/",
     "publisher": "the-underbar",
@@ -19,10 +31,10 @@
     "title": "CPAN Security Tip #1/3"
   },
   {
-    "description": "Catalyst DBIx JS, Phoenix, AZ (Phoenix Fuel)",
-    "link": "https://jobs.perl.org/job/22052",
-    "publisher": "perljobs",
-    "title": "Perl Jobs"
+    "description": "Additional exercises as a companion for Learning Perl, 4th ed.",
+    "link": "https://perlschool.com/books/learning-perl-exercises/",
+    "publisher": "perlschool",
+    "title": "Learning Perl Exercises"
   },
   {
     "description": "Catalyst DBIx JS, Phoenix, AZ (Phoenix Fuel)",
@@ -100,23 +112,5 @@
     "link": "https://fosdem.org/2026/stands/",
     "publisher": "TPRF",
     "title": "Perl and Raku at FOSDEM"
-  },
-  {
-    "description": "A book about the new features in Perl up to Perl v5.42",
-    "link": "https://perlschool.com/books/perl-new-features/",
-    "publisher": "perlschool",
-    "title": "Perl New Features"
-  },
-  {
-    "description": "A book about interacting with the web with Mojolicious",
-    "link": "https://perlschool.com/books/mojolicious-web-clients/",
-    "publisher": "perlschool",
-    "title": "Mojolicious Web Clients"
-  },
-  {
-    "description": "Additional exercises as a companion for Learning Perl, 4th ed.",
-    "link": "https://perlschool.com/books/learning-perl-exercises/",
-    "publisher": "perlschool",
-    "title": "Learning Perl Exercises"
   }
 ]
