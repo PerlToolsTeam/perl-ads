@@ -107,6 +107,12 @@
     "title": "The Perl and Raku Foundation"
   },
   {
+    "description": "Perl people in your town",
+    "link": "https://pm.org/",
+    "publisher": "perlmongers",
+    "title": "Perl Mongers"
+  },
+  {
     "description": "Visit the Perl and Raku stand at FOSDEM - Building K stand A9",
     "end": "2026-02-01",
     "link": "https://fosdem.org/2026/stands/",
