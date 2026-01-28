@@ -118,5 +118,11 @@
     "link": "https://fosdem.org/2026/stands/",
     "publisher": "TPRF",
     "title": "Perl and Raku at FOSDEM"
+  },
+  {
+    "link": "https://blogs.perl.org/",
+    "title": "blogs.perl.org — blogging the onion",
+    "description": "A community service where Perl users can blog about anything",
+    "publisher": "perlblogs"
   }
 ]
