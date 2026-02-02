@@ -12,6 +12,12 @@
     "title": "Perl New Features"
   },
   {
+    "description": "A community service where Perl users can blog about anything",
+    "link": "https://blogs.perl.org/",
+    "publisher": "perlblogs",
+    "title": "blogs.perl.org - blogging the onion"
+  },
+  {
     "description": "A Perl-adjacent maybe-podcast.",
     "link": "https://underbar.cpan.io/",
     "publisher": "the-underbar",
@@ -74,13 +80,6 @@
     "title": "Live contribution to a Perl project"
   },
   {
-    "description": "Join us for the Perl and Raku FOSDEM community dinner 31st January 2026",
-    "end": "2026-01-31",
-    "link": "https://perlfoundation.org/fosdem/community-dinner.html",
-    "publisher": "TPRF",
-    "title": "FOSDEM Community dinner"
-  },
-  {
     "description": "Make sure none of your favourite CPAN dists are unmaintained!",
     "end": "2026-04-30",
     "link": "https://neilb.org/2013/07/24/adopt-a-module.html",
@@ -94,35 +93,15 @@
     "title": "Perl Weekly newsletter"
   },
   {
-    "description": "Practical design patterns for modern Perl",
-    "end": "2026-01-31",
-    "link": "https://perlschool.com/books/design-patterns/",
-    "publisher": "perlschool",
-    "title": "Design Patterns in Modern Perl"
-  },
-  {
-    "description": "Supporting our communities",
-    "link": "https://perlfoundation.org/",
-    "publisher": "TPRF",
-    "title": "The Perl and Raku Foundation"
-  },
-  {
     "description": "Perl people in your town",
     "link": "https://pm.org/",
     "publisher": "perlmongers",
     "title": "Perl Mongers"
   },
   {
-    "description": "Visit the Perl and Raku stand at FOSDEM - Building K stand A9",
-    "end": "2026-02-01",
-    "link": "https://fosdem.org/2026/stands/",
+    "description": "Supporting our communities",
+    "link": "https://perlfoundation.org/",
     "publisher": "TPRF",
-    "title": "Perl and Raku at FOSDEM"
-  },
-  {
-    "link": "https://blogs.perl.org/",
-    "title": "blogs.perl.org - blogging the onion",
-    "description": "A community service where Perl users can blog about anything",
-    "publisher": "perlblogs"
+    "title": "The Perl and Raku Foundation"
   }
 ]
