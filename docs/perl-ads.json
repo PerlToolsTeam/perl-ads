@@ -103,5 +103,11 @@
     "link": "https://perlfoundation.org/",
     "publisher": "TPRF",
     "title": "The Perl and Raku Foundation"
+  },
+  {
+    "description": "An on-line community where people can ask questions, post their best work, and generally geek out on Perl",
+    "link": "https://perlmonks.org/",
+    "publisher": "PerlMonks",
+    "title": "PerlMonks"
   }
 ]
