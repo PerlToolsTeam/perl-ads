@@ -109,5 +109,11 @@
     "link": "https://perlfoundation.org/",
     "publisher": "TPRF",
     "title": "The Perl and Raku Foundation"
+  },
+  {
+    "description": "Take part in coding challenge, every week",
+    "link": "https://theweeklychallenge.org/",
+    "publisher": "Team PWC",
+    "title": "The Weekly Challenge"
   }
 ]
