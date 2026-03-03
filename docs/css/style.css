@@ -172,6 +172,9 @@ footer p{ margin:0; }
   transform: translateY(0);
 }
 
+/* Reserve space for ad banner to prevent layout shift */
+#perl-ad-target{min-height:48px;}
+
 /* Small niceties */
 tt, code tt { 
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
