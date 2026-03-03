@@ -1,0 +1,20 @@
+{
+  "name": "perl-ads",
+  "version": "1.0.0",
+  "description": "A tiny banner for Perl community announcements",
+  "main": "docs/perl-ads.js",
+  "files": [
+    "docs/perl-ads.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PerlToolsTeam/perl-ads.git"
+  },
+  "homepage": "https://perl-ads.perlhacks.com",
+  "keywords": [
+    "perl",
+    "ads",
+    "banner",
+    "community"
+  ]
+}
