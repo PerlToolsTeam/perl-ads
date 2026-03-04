@@ -3,7 +3,7 @@
    ------------------------------- */
 
 /* Font (lightweight import) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=optional');
 
 /* Theme tokens */
 :root{
@@ -171,6 +171,9 @@ footer p{ margin:0; }
   opacity:1 !important;
   transform: translateY(0);
 }
+
+/* Reserve space for ad banner to prevent layout shift */
+#perl-ad-target{min-height:48px;}
 
 /* Small niceties */
 tt, code tt { 
