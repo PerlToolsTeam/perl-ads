@@ -102,5 +102,23 @@
     "publisher": "mySociety",
     "start": "2026-05-07",
     "title": "Developer, SocietyWorks - Remote (UK based)"
+  },
+  {
+    "description": "Add a SECURITY.md policy to your favorite CPAN dists!",
+    "link": "https://security.metacpan.org/docs/guides/security-policy-for-authors.html",
+    "publisher": "cpansec",
+    "title": "CPAN Security Tip #1/3"
+  },
+  {
+    "description": "Get help with reporting or fixing a security issue on CPAN!",
+    "link": "https://security.metacpan.org/docs/report.html",
+    "publisher": "cpansec",
+    "title": "CPAN Security Tip #3/3"
+  },
+  {
+    "description": "Make sure none of your favourite CPAN dists are unmaintained!",
+    "link": "https://neilb.org/2013/07/24/adopt-a-module.html",
+    "publisher": "cpansec",
+    "title": "CPAN Security Tip #2/3"
   }
 ]
