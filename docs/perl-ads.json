@@ -112,5 +112,11 @@
     "link": "https://theweeklychallenge.org/",
     "publisher": "Team PWC",
     "title": "The Weekly Challenge"
+  },
+  {
+    "description": "Clear, practical books for modern Perl Programmers",
+    "link": "https://perlschool.com/",
+    "publisher": "perlschool",
+    "title": "Perl School"
   }
 ]
