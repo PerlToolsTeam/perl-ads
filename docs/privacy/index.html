@@ -66,16 +66,45 @@
       <li>These requests are served as static files. No cookies, tracking
         pixels, or identifiers are set.</li>
 
-      <li>We do not log who requests the ads or which sites display them.</li>
+      <li>We do not log who requests the ads, which sites display them, or
+        which advertisements users click. The Perl Ad Server serves static
+        files and does not receive a request when an advert is clicked.</li>
+      </ul>
 
-      <li><b>UTM parameters:</b> The script appends standard UTM tracking
-        parameters (<code>utm_source</code>, <code>utm_medium</code>,
+      <h4>UTM Parameters</h4>
+
+      <p>The script appends standard UTM tracking parameters (
+        <code>utm_source</code>, <code>utm_medium</code>,
         <code>utm_campaign</code>, <code>utm_content</code>) to outgoing ad
-        links. These parameters help publishers track where their traffic comes
-        from. The hostname of your site is included in the
-        <code>utm_content</code> parameter and sent to the publisher's website
-        when a visitor clicks on an ad.</li>
-    </ul>
+        links. These parameters are interpreted by the destination website's
+        analytics software (such as Google Analytics) and are not sent back to
+        the Perl Ad Server.</p>
+
+      <p>The values used are:</p>
+
+      <ul>
+        <li><strong>utm_source=perl-ads</strong> – identifies the Perl Ads
+          network.</li>
+        <li><strong>utm_medium=banner</strong> – identifies the traffic as
+          coming from a banner advert.</li>
+        <li><strong>utm_campaign</strong> – identifies the advertised
+          site.</li>
+        <li><strong>utm_content</strong> – contains the hostname of the site
+          displaying the advert.</li>
+      </li>
+
+      <p>The hostname included in <code>utm_content</code> is taken from the
+        browser at the time the advert is displayed. This allows publishers
+        to see which websites are sending them traffic without requiring those
+        websites to register with the Perl Ad Server.</p>
+
+      <h3>No Cross-site Tracking</h3>
+
+      <p>Unlike many advertising networks, the Perl Ad Server does not assign
+        unique identifiers, set tracking cookies, fingerprint browsers, or
+        build profiles of users across websites. The only information added to
+        an advert click is the standard UTM parameters used by the destination
+        site's own analytics software.</p>
 
     <h3>Cookies</h3>
 
