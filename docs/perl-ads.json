@@ -124,5 +124,17 @@
     "link": "https://theweeklychallenge.org/",
     "publisher": "Team PWC",
     "title": "The Weekly Challenge"
+  },
+  {
+    "description": "Paperback edition now available",
+    "link": "https://perlschool.com/books/design-patterns/",
+    "publisher": "perlschool",
+    "title": "Design Patterns in Modern Perl"
+  },
+  {
+    "description": "Clear, practical books for modern Perl Programmers",
+    "link": "https://perlschool.com/",
+    "publisher": "perlschool",
+    "title": "Perl School"
   }
 ]
