@@ -104,7 +104,13 @@ function initializeAds() {
       linkUrl.searchParams.set('utm_source', 'perl-ads');
       linkUrl.searchParams.set('utm_medium', 'banner');
       linkUrl.searchParams.set('utm_campaign', randomAd.publisher || 'unknown');
-      linkUrl.searchParams.set('utm_content', window.location.hostname);
+
+      const hostname = window.location.hostname
+        .toLowerCase()
+        .replace(/^www\./, '');
+
+      linkUrl.searchParams.set('utm_content', hostname);
+
       link.href = linkUrl.toString();
     } catch (e) {
       // Fallback to original link if URL parsing fails
