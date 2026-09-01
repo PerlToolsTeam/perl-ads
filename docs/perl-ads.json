@@ -124,5 +124,11 @@
     "link": "https://theweeklychallenge.org/",
     "publisher": "Team PWC",
     "title": "The Weekly Challenge"
+  },
+  {
+    "description": "Registrations and talk submissions open!",
+    "link": "https://act.yapc.eu/lpw2026",
+    "publisher": "LPW",
+    "title": "The London Perl & Raku Workshop"
   }
 ]
