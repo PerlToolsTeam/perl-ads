@@ -108,6 +108,12 @@
     "title": "Perl Mongers"
   },
   {
+    "description": "Registrations and talk submissions open!",
+    "link": "https://act.yapc.eu/lpw2026",
+    "publisher": "LPW",
+    "title": "The London Perl & Raku Workshop"
+  },
+  {
     "description": "Software Development Engineer II, Seattle, WA (Insight Global)",
     "link": "https://jobs.perl.org/job/22053",
     "publisher": "perljobs",
@@ -124,11 +130,5 @@
     "link": "https://theweeklychallenge.org/",
     "publisher": "Team PWC",
     "title": "The Weekly Challenge"
-  },
-  {
-    "description": "Registrations and talk submissions open!",
-    "link": "https://act.yapc.eu/lpw2026",
-    "publisher": "LPW",
-    "title": "The London Perl & Raku Workshop"
   }
 ]
