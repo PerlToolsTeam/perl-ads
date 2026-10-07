@@ -110,6 +110,12 @@
     "title": "Perl Weekly newsletter"
   },
   {
+    "description": "Perl-IDE Survey 2026",
+    "link": "https://survey.perlide.org/",
+    "publisher": "perlide",
+    "title": "The 2026 Perl-IDE Survey is Now Live!"
+  },
+  {
     "description": "Perl people in your town",
     "link": "https://pm.org/",
     "publisher": "perlmongers",
