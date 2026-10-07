@@ -54,6 +54,14 @@
     "title": "Perl School"
   },
   {
+    "description": "Configure",
+    "end": "2026-11-13",
+    "link": "https://underbar.cpan.io/episodes/11/",
+    "publisher": "the-underbar",
+    "start": "2026-10-16",
+    "title": "The Underbar, episode 11"
+  },
+  {
     "description": "Financial support is essential for our sustainability - donate today",
     "link": "https://perlfoundation.org/donate.html",
     "publisher": "TPRF",
