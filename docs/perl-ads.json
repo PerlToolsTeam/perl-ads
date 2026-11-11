@@ -122,10 +122,11 @@
     "title": "The 2026 Perl-IDE Survey is Now Live!"
   },
   {
-    "description": "Registrations and talk submissions open!",
+    "description": "Registration open!",
     "link": "https://act.yapc.eu/lpw2026",
     "publisher": "LPW",
-    "title": "The London Perl & Raku Workshop"
+    "title": "The London Perl & Raku Workshop",
+    "end": "2026-11-22"
   },
   {
     "description": "Supporting our communities",
