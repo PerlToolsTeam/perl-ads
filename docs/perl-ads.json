@@ -139,5 +139,18 @@
     "publisher": "the-underbar",
     "start": "2026-11-18",
     "title": "The Underbar, episode 12"
+  },
+  {
+    "description": "New Perl Syntax. New CPAN Modules. New Data Formats.",
+    "end": "2026-12-31",
+    "link": "https://perlschool.com/books/data-munging/",
+    "publisher": "perlschool",
+    "title": "Data Munging with Perl [2ed]"
+  },
+  {
+    "description": "Your Perl has a few new tricks",
+    "link": "https://tips.perlhacks.com/",
+    "publisher": "perlhacks",
+    "title": "Modern Perl Tips"
   }
 ]
