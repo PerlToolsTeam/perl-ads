@@ -90,6 +90,13 @@
     "title": "CPAN Security Tip #2/3"
   },
   {
+    "description": "New Perl Syntax. New CPAN Modules. New Data Formats.",
+    "end": "2026-12-31",
+    "link": "https://perlschool.com/books/data-munging/",
+    "publisher": "perlschool",
+    "title": "Data Munging with Perl [2ed]"
+  },
+  {
     "description": "Paperback edition now available",
     "link": "https://perlschool.com/books/design-patterns/",
     "publisher": "perlschool",
@@ -114,13 +121,6 @@
     "title": "The 2026 Perl-IDE Survey is Now Live!"
   },
   {
-    "description": "Registration open!",
-    "end": "2026-11-21",
-    "link": "https://act.yapc.eu/lpw2026",
-    "publisher": "LPW",
-    "title": "The London Perl & Raku Workshop"
-  },
-  {
     "description": "Supporting our communities",
     "link": "https://perlfoundation.org/",
     "publisher": "TPRF",
@@ -139,13 +139,6 @@
     "publisher": "the-underbar",
     "start": "2026-11-18",
     "title": "The Underbar, episode 12"
-  },
-  {
-    "description": "New Perl Syntax. New CPAN Modules. New Data Formats.",
-    "end": "2026-12-31",
-    "link": "https://perlschool.com/books/data-munging/",
-    "publisher": "perlschool",
-    "title": "Data Munging with Perl [2ed]"
   },
   {
     "description": "Your Perl has a few new tricks",
